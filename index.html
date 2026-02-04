@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sudoku Zen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <h1> Sudoku </h1>
+<p class="subtitle">Focus • Solve • Relax</p>
+
+<div class="top-controls">
+    <select id="difficulty" onchange="newGame()">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+    </select>
+
+    <div class="timer">
+        ⏱ <span id="time">00:00</span>
+    </div>
+
+    <button class="mode-btn" onclick="toggleTheme()" id="themeBtn">🌙</button>
+</div>
+
+    <div id="sudoku-grid"></div>
+
+    <div class="buttons">
+        <button onclick="checkSolution()">Check Solution</button>
+        <button onclick="newGame()">New Game</button>
+    </div>
+
+    <div id="message"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
